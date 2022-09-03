@@ -848,6 +848,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    padding: 40px;
+
     width: 528px;
     height: 580px;
 
@@ -872,4 +874,211 @@ img {
     border-radius: 50%;
     background-color: transparent;
     padding: 0;
+
+    transition: var(--transition-fill);
+}
+
+.modal-close-btn:focus {
+    fill: var(--main-accent-color);
+    outline: none;
+}
+
+.contact-form {
+
+
+}
+
+.contact-form-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    
+    color: #212121;
+}
+
+.contact-form-field {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+    
+}
+
+.contact-form-field-name {
+    /* font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: #757575; */
+}
+
+.contact-form-input-wrapper {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: var(--transition-border);
+}
+
+.contact-form-input-icon {
+    position: absolute;
+    top:50%;
+    left: 12px;
+
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    transition: var(--transition-fill), var(--transition-border);
+}
+
+.contact-form-input:focus {
+    border-color: var(--main-accent-color);
+    outline: none;
+}
+
+.contact-form-input:focus + .contact-form-input-icon {
+    fill: var(--main-accent-color);
+}
+
+
+.contact-form-message {
+    display: block;
+
+    margin-top: 4px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: var(--transition-border);
+
+}
+
+.contact-form-message:focus {
+    border-color: var(--main-accent-color);
+    outline: none;
+}
+
+.contact-form-message::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+
+.contact-form-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.contact-form-checkbox:checked + .contact-form-custom-checkbox {
+    background-color: var(--main-accent-color);
+    background-image: url(../images/checkbox-enable.svg);
+    border-color: var(--main-accent-color);
+    
+}
+
+.contact-form-custom-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    margin-right: 8px;
+
+    border: 1px solid #000000;
+    border-radius: 2px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    
+}
+
+.contact-form-checkbox-policy{
+        
+    display: flex;
+    align-items: center;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+
+    cursor: pointer;
+}
+
+.contact-form-button {
+
+    margin-top: 30px;
+
+    display: block;
+    
+        min-width: 200px;
+        padding: 10px 10px;
+        margin-right: auto;
+        margin-left: auto;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+        font-family: inherit;
+    
+        background-color: var(--main-accent-color);
+        color: var(--button-accent-text-color);
+        border: none;
+        border-radius: 4px;
+        border-color: transparent;
+    
+        transition: var(--transition-bg-color), var(--transition-shadow);
+    }
+    
+    .contact-form-button:focus,
+    .contact-form-button:hover {
+        background-color: var(--button-hero-bg-color_hover);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

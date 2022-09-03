@@ -424,6 +424,46 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <form  class="contact-form">
+                <b class="contact-form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <label class="contact-form-field">
+                    <span class="contact-form-field-name">Имя</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_name" class="contact-form-input" type="text" required>
+                        <svg class="contact-form-input-icon" width="12" height="12">
+                            <use href="./images/sprite.svg#icon-user_name"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">Телефон
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_tel" class="contact-form-input" type="tel" required>
+                        <svg class="contact-form-input-icon" width="13" height="13">
+                            <use href="./images/sprite.svg#icon-user_tel"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">Почта
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_email" class="contact-form-input" type="email" required>
+                        <svg class="contact-form-input-icon" width="15" height="12">
+                            <use href="./images/sprite.svg#icon-user_email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">Коментарий
+                    <textarea class="contact-form-message" placeholder="Введите текст" name="user_message"></textarea>
+                </label>
+                <label class="contact-form-checkbox-policy">
+                    <input class="contact-form-checkbox" type="checkbox" name="accept_policy" required>
+                    <span class="contact-form-custom-checkbox"></span>
+                    Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a>
+                </label>
+                <button class="contact-form-button" type="submit">Отправить</button>
+
+            </form>
+
         </div>
     </div>
 
