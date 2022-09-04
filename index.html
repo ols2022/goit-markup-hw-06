@@ -382,7 +382,7 @@
                 </address>
             </div>
             <div class="footer-social">
-                <strong class="footer-social-title">Присоединяйтесь</strong>
+                <strong class="footer-title">Присоединяйтесь</strong>
                 <ul class="footer-social-list list">
                     <li class="footer-social-list-item">
                         <a href="#" class="footer-social-link">
@@ -414,6 +414,16 @@
                     </li>
                 </ul>
             </div>
+            
+            <form class="footer-subscrib-form">
+                <b class="footer-title">Подпишитесь на рассылку</b>
+                <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" required>
+                <button class="subscribe-form-button">Подписаться
+                    <svg class="subscribe-form-button-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"></use>    
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 
@@ -430,7 +440,7 @@
                 <label class="contact-form-field">
                     <span class="contact-form-field-name">Имя</span>
                     <span class="contact-form-input-wrapper">
-                        <input name="user_name" class="contact-form-input" type="text" required>
+                        <input name="user_name" class="contact-form-input" type="text" required minlength="3">
                         <svg class="contact-form-input-icon" width="12" height="12">
                             <use href="./images/sprite.svg#icon-user_name"></use>
                         </svg>
@@ -438,7 +448,7 @@
                 </label>
                 <label class="contact-form-field">Телефон
                     <span class="contact-form-input-wrapper">
-                        <input name="user_tel" class="contact-form-input" type="tel" required>
+                        <input name="user_tel" class="contact-form-input" type="tel" pattern="[0-9]{10}" required>
                         <svg class="contact-form-input-icon" width="13" height="13">
                             <use href="./images/sprite.svg#icon-user_tel"></use>
                         </svg>

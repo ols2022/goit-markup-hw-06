@@ -777,11 +777,12 @@ img {
     margin-bottom: 9px;
 }
 
+
 .footer-social-list {
     display: flex;
 }
 
-.footer-social-title {
+.footer-title {
     display: block;
 
     margin-bottom: 20px;
@@ -820,8 +821,95 @@ img {
     background-color: var(--main-accent-color);
 }
 
+/* ------SUBSCRIPTION FORM---------- */
 
-/* Backdrop */
+.footer-subscrib-form {
+    display: inline-block;
+   
+    margin-left: 93px;
+}
+
+.subscribe-form-input {
+    display: inline-block;
+
+    width: 358px;
+    height: 50px;
+
+    margin-right: 12px;
+    padding: 0 0 0 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: var(--footer-bg-color);
+
+    transition: var(--transition-border);
+}
+
+.subscribe-form-input:focus {
+    border-color: var(--main-accent-color);
+    outline: none;
+}
+
+
+.subscribe-form-input::placeholder {
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+        
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-button {
+
+    position: relative;
+
+    display: inline-block;
+
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 28px 10px 28px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+
+    background-color: var(--main-accent-color);
+    color: var(--button-accent-text-color);
+    /* border: 1px, solid, transparent; */
+    border-radius: 4px;
+    border-color: transparent;
+
+    cursor: pointer;
+
+    transition: var(--transition-bg-color), var(--transition-shadow);
+}
+
+.subscribe-form-button:focus,
+.subscribe-form-button:hover {
+    background-color: var(--button-hero-bg-color_hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form-button-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+
+    transform: translateY(-50%);
+}
+
+/* ------BACKDROP-------------- */
 
 .is-hidden {
     opacity: 0;
@@ -883,11 +971,6 @@ img {
     outline: none;
 }
 
-.contact-form {
-
-
-}
-
 .contact-form-title {
     display: block;
     width: 100%;
@@ -915,15 +998,6 @@ img {
     
     color: #757575;
     
-}
-
-.contact-form-field-name {
-    /* font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    
-    color: #757575; */
 }
 
 .contact-form-input-wrapper {
@@ -1041,7 +1115,7 @@ img {
         
     display: flex;
     align-items: center;
-    
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -1056,29 +1130,31 @@ img {
 
     display: block;
     
-        min-width: 200px;
-        padding: 10px 10px;
-        margin-right: auto;
-        margin-left: auto;
+    min-width: 200px;
+    padding: 10px 10px;
+    margin-right: auto;
+    margin-left: auto;
     
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        text-align: center;
-        letter-spacing: 0.06em;
-        font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: inherit;
     
-        background-color: var(--main-accent-color);
-        color: var(--button-accent-text-color);
-        border: none;
-        border-radius: 4px;
-        border-color: transparent;
+    background-color: var(--main-accent-color);
+    color: var(--button-accent-text-color);
+    border: none;
+    border-radius: 4px;
+    border-color: transparent;
+
+    cursor: pointer;
     
-        transition: var(--transition-bg-color), var(--transition-shadow);
+    transition: var(--transition-bg-color), var(--transition-shadow);
     }
     
-    .contact-form-button:focus,
-    .contact-form-button:hover {
-        background-color: var(--button-hero-bg-color_hover);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.contact-form-button:focus,
+.contact-form-button:hover {
+    background-color: var(--button-hero-bg-color_hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
