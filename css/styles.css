@@ -826,7 +826,7 @@ img {
 .footer-subscrib-form {
     display: inline-block;
    
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .subscribe-form-input {
@@ -871,7 +871,7 @@ img {
 
     position: relative;
 
-    display: inline-block;
+    display: inline-flex;
 
     min-width: 200px;
     height: 50px;
@@ -880,6 +880,7 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    align-items: center;
     text-align: left;
     letter-spacing: 0.06em;
     font-family: inherit;
@@ -966,7 +967,8 @@ img {
     transition: var(--transition-fill);
 }
 
-.modal-close-btn:focus {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
     fill: var(--main-accent-color);
     outline: none;
 }
@@ -1025,8 +1027,8 @@ img {
 
     transform: translateY(-50%);
 
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
 
     transition: var(--transition-fill), var(--transition-border);
 }
@@ -1080,17 +1082,9 @@ img {
     position: absolute;
 }
 
-
-.contact-form-checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-
-}
-
 .contact-form-checkbox:checked + .contact-form-custom-checkbox {
     background-color: var(--main-accent-color);
-    background-image: url(../images/checkbox-enable.svg);
+    background-image: url(../images/checkbox-enable2.svg);
     border-color: var(--main-accent-color);
     
 }
@@ -1100,6 +1094,7 @@ img {
     width: 16px;
     height: 15px;
 
+    padding: 2px 1px 1px 2px;
     margin-right: 8px;
 
     border: 1px solid #000000;
@@ -1107,7 +1102,7 @@ img {
 
     background-size: contain;
     background-repeat: no-repeat;
-    background-origin: border-box;
+    background-origin: content-box;
     
 }
 
@@ -1115,6 +1110,9 @@ img {
         
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
 
     font-weight: 400;
     font-size: 14px;
@@ -1122,6 +1120,10 @@ img {
     color: #757575;
 
     cursor: pointer;
+}
+
+.terms_of_agreement_link {
+    color: var(--main-accent-color);
 }
 
 .contact-form-button {
