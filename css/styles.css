@@ -829,6 +829,10 @@ img {
     margin-left: auto;
 }
 
+.footer-subscribe-form__wrapper {
+    display: inline-flex;
+}
+
 .subscribe-form-input {
     display: inline-block;
 
@@ -881,7 +885,7 @@ img {
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
-    text-align: left;
+    /* text-align: left; */
     letter-spacing: 0.06em;
     font-family: inherit;
 
@@ -907,6 +911,8 @@ img {
     top: 50%;
     right: 28px;
 
+    display: inline-flex;
+    
     transform: translateY(-50%);
 }
 
